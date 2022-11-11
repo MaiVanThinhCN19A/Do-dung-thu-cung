@@ -1,0 +1,44 @@
+.input-field {
+  overflow: hidden;
+  margin-top: 4px;
+  min-height: 88px;
+
+  label {
+    display: block;
+    width: 100%;
+    color: #434343;
+  }
+
+  textarea {
+    height: 100%;
+    min-height: 100px;
+  }
+
+  textarea,
+  input {
+    margin-top: 6px;
+    width: 100%;
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid #e2e3e4;
+    padding: 12px 14px;
+    font-size: 15px;
+
+    &::placeholder {
+      font-size: 13px;
+      color: #808081;
+    }
+  }
+
+  &.error {
+    input {
+      border: 1px solid #ff0000;
+    }
+    span {
+      font-size: 12px;
+      margin-top: 6px;
+      display: block;
+      color: #ff0000;
+    }
+  }
+}
